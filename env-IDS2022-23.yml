@@ -1,0 +1,18 @@
+name: env-IDS2022-23
+channels:
+  - plotly
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - graphviz
+  - nb_conda
+  - jupyter==1.0.0
+  - nltk
+  - pip
+  - pip:
+    - pm4py==2.2.27
+    - mlxtend==0.20.0
+    - seaborn==0.11.2
+    - p-decision-tree
