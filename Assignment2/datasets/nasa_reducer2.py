@@ -12,7 +12,7 @@ for line in sys.stdin:
     if current_activity != activity:
         if current_activity is not None:
             mean_exec_time = current_totaltime/current_freq
-            print(f"{current_activity}\t{mean_exec_time}\t{current_freq}")
+            print("{}\t{}\t{}".format(current_activity, mean_exec_time, current_freq))
         current_activity = activity
         current_totaltime = exec_time
         current_freq = 1
@@ -21,5 +21,4 @@ for line in sys.stdin:
         current_freq += 1
 
 if current_activity == activity:
-    print(f"{current_activity}\t{mean_exec_time}\t{current_freq}")
-    
+    print("{}\t{}\t{}".format(current_activity, mean_exec_time, current_freq))
